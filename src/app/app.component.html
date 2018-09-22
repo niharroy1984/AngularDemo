@@ -1,0 +1,42 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+  <h1>
+    Welcome to {{ title }}
+     
+  </h1>
+  <img width="300" alt="Angular Logo" src="assets/images/iiht.png">
+</div>
+
+
+
+ 
+<input type="text" value="Hey" shadab="male">
+<hr>
+Data Binding:
+<hr>
+1. Source to View
+<hr>
+Hey You name is : {{customerName}}
+<hr>
+2. View To Source:  
+<hr>
+<input type="tex" (input)="myInputFunction()">
+<button (click)="buttonClickhandler()">Button To click</button>
+<hr>
+<input type="text" (paste)="cutCopyPaste()">
+<hr>
+Propert Binding(source to view)
+<hr>
+<input type="text" [disabled]="isDisabledFlag">
+<input type="{{mytype}}" >
+
+<hr>
+Two ways Data Binding:
+<hr>
+Enter Name:<input  [(ngModel)]="userName"  type="text" > 
+<hr>  
+Your Name is : {{userName}}
+<hr>
+<input type="text" [disabled]="disableTextBox" (input)="countMyCharacters()"> 10/{{charCount}}
+<br>
+<app-parent></app-parent>

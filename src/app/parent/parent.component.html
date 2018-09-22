@@ -1,0 +1,46 @@
+<p>
+  parent works!
+</p>
+<hr>
+NG  IF
+<hr>
+<span *ngIf="checkMyFlag">
+  Hey i am conditionally coming here
+  </span>
+<hr>
+NG FOR  
+<hr>
+  <div *ngFor="let xyz of cities">Your City is : {{xyz}}</div>
+
+  <select>
+    <option *ngFor="let mycity of cities">{{mycity}}</option>
+  </select>
+<br>
+<hr>
+<p>Here are my Custom Directives</p>
+<hr>
+  <span appMyCustomDirective>- Tom</span>
+  <br>
+  <span appMyCustomDirective>- Tom</span>
+
+
+
+  <hr>
+  Here Are Angular PIPES 
+  <hr>
+
+  {{ parentName | lowercase }}
+  <br>
+  {{ parentName | uppercase }}
+  <br>
+  {{ myAccountBalance | currency:'USD' }}
+  <br>
+  {{ myAccountBalance | currency:'INR' }}
+  <br>
+  {{ myAccountBalance | currency:'GBP' }}
+  <br>
+  {{ myAccountBalance | percent:digitInfo }}
+  <br>
+  {{ myJosnObj | json }}
+
+   
