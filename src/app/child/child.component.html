@@ -1,7 +1,10 @@
 <p>
   child works!
-  Tha value got from parent component is : {{childComponentContainerToHoldParentsValue}}
-  {{fromparenttochildkey}}
+  Tha value got from parent component is : {{fromparenttochildkey}}
+ 
 </p>
 
-<button (click)="myClickHandler()">Hit To Generate An Event</button>
+<button (click)="myClickHandler()">Child-Hit To Generate An Event</button>
+
+<span *ngIf="templateFlag; then printtemplateone else printtemplatetwo">
+  </span>

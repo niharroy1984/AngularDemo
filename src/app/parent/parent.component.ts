@@ -11,10 +11,17 @@ export class ParentComponent implements OnInit {
   cities=['Bombay','Delhi','Chennai','Hydarabad']
   myJosnObj={name:'Tom',age:23}
   myAccountBalance=5
+  childdata=''
+  templateFlag=true;
 public parentContainer="";
   constructor() { }
 
   ngOnInit() {
   }
 
+  childEventHandler($event){
+    console.log('button got clicked in child')
+    console.log($event)
+    this.childdata=$event
+  }
 }

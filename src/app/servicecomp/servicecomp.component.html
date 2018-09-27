@@ -1,0 +1,16 @@
+<p>
+  Static Data from service which we have injected into our component is : {{staticcontent}}
+</p>
+<p>
+
+  Student Object from our Service , Which we have injected into our component - name: {{studentObj.name}}
+  <br>
+  address : {{studentObj.address}}
+</p>
+<button (click)="hitService()">Click me to trigger service function</button>
+<br>
+Data after user Hit is : {{dataOnuserHit}}
+<hr>
+<app-servicecomptwo></app-servicecomptwo>
+<hr>
+<app-httpdatacomponet></app-httpdatacomponet>

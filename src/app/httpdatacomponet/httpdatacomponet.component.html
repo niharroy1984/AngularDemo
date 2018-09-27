@@ -1,0 +1,13 @@
+<p>
+{{comments}}
+
+iterate over the reponse:
+
+</p>
+
+
+<div *ngFor="let commnet of comments">
+Post Id: {{commnet.postId}}   ::: id: {{commnet.id}}   ::   name: {{commnet.name}} : email: {{commnet.email}}
+<br><br>
+Body : {{commnet.body}}
+</div>

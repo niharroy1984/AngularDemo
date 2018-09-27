@@ -43,4 +43,18 @@ NG FOR
   <br>
   {{ myJosnObj | json }}
 
-   
+  <hr>
+  Child to Parent  Communication  
+  <hr>
+{{childdata}}
+  <app-child [fromparenttochildkey]="parentName"  (childEventToGetInParentComponent)="childEventHandler($event)"></app-child>
+  
+  <hr>
+
+  Angular Template Sample
+  <hr>
+
+  <span *ngIf="templateFlag; then printtemplateone else printtemplatetwo">
+   </span>
+  <ng-template #printtemplateone>Hey I am here because your value was true!!</ng-template>
+  <ng-template #printtemplatetwo>Hey I am here because your value was false!!</ng-template>
