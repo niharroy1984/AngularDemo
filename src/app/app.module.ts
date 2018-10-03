@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import {FormsModule} from '@angular/forms'
+import {FormsModule, ReactiveFormsModule} from '@angular/forms'
 
 import { AppComponent } from './app.component';
 import { ParentComponent } from './parent/parent.component';
@@ -14,7 +14,12 @@ import { MyappRoutingModule } from './myapp-routing/myapp-routing.module';
 import { ServicecompComponent } from './servicecomp/servicecomp.component';
 import { ServicecomptwoComponent } from './servicecomptwo/servicecomptwo.component';
 import {HttpClientModule} from '@angular/common/http';
-import { HttpdatacomponetComponent } from './httpdatacomponet/httpdatacomponet.component'
+import { HttpdatacomponetComponent } from './httpdatacomponet/httpdatacomponet.component';
+import { TemplatedrivenComponent } from './templatedriven/templatedriven.component';
+import { ReactiveformComponent } from './reactiveform/reactiveform.component';
+import { AdvanceroutecompComponent } from './advanceroutecomp/advanceroutecomp.component';
+import { TestadnavcerouteComponent } from './testadnavceroute/testadnavceroute.component';
+import { AdvanceRoutesModule } from './advance-routes/advance-routes.module';
 
 @NgModule({
   declarations: [
@@ -28,15 +33,22 @@ import { HttpdatacomponetComponent } from './httpdatacomponet/httpdatacomponet.c
     ContctusComponent,
     ServicecompComponent,
     ServicecomptwoComponent,
-    HttpdatacomponetComponent
+    HttpdatacomponetComponent,
+    TemplatedrivenComponent,
+    ReactiveformComponent,
+    AdvanceroutecompComponent,
+    TestadnavcerouteComponent
+    
   ],
   imports: [
     BrowserModule,
-    FormsModule,
     MyappRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule,
+    ReactiveFormsModule,
+    AdvanceRoutesModule
   ],
   providers: [],
-  bootstrap: [ServicecompComponent]
+  bootstrap: [ReactiveformComponent]
 })
 export class AppModule { }
